@@ -488,6 +488,11 @@ body.nav-open { overflow: hidden; }
 }
 
 .detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, 320px); gap: clamp(34px, 5vw, 76px); align-items: start; }
+.detail-grid .prose { max-width: 74ch; }
+.detail-grid .prose > h2:first-child { margin-top: 0; }
+.detail-grid .prose h2 { scroll-margin-top: calc(var(--nav-h) + 24px); }
+.aside-card p { margin: 0 0 18px; font-size: 16px; line-height: 1.65; color: #4d5a4e; }
+.aside-card--paper p { color: #4d5a4e; }
 .detail-aside { position: sticky; top: calc(var(--nav-h) + 24px); display: grid; gap: 22px; }
 
 .factlist { display: grid; gap: 0; margin: 0; }
@@ -593,7 +598,8 @@ body.nav-open { overflow: hidden; }
 .field textarea { resize: vertical; min-height: 96px; }
 .field ::placeholder { color: rgba(214, 220, 209, .35); }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-.inquiry .btn { margin-top: 10px; width: 100%; justify-content: space-between; }
+.inquiry .btn { margin-top: 10px; width: 100%; justify-content: space-between; color: var(--light); border-color: rgba(225, 232, 216, .55); }
+.inquiry .btn:hover { background: var(--light); color: var(--green); border-color: var(--light); }
 .inquiry .note { color: #97a48f; border-top-color: var(--line-faint); }
 
 .form-note {

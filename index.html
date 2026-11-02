@@ -4,15 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#102411">
-<meta name="description" content="Forbes Stranger LLP. Private criminal defense in New York City, 24/7. We are where you need us.">
-<meta property="og:image" content="./assets/img/manhattan-night-1672.webp">
-<meta name="twitter:card" content="summary_large_image">
 <title>Forbes Stranger LLP | Private Criminal Defense | New York City</title>
+<meta name="description" content="Forbes Stranger LLP. Private criminal defense in New York City, 24/7. We are where you need us.">
+<meta property="og:title" content="Forbes Stranger LLP | Private Criminal Defense | New York City">
+<meta property="og:description" content="Forbes Stranger LLP. Private criminal defense in New York City, 24/7. We are where you need us.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/manhattan-night-1672.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/forbes-stranger-thistle-white.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/forbes-stranger-thistle-white.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js');</script>
 <style>
 :root{--green:#102411;--green-black:#081209;--light:#f3f0e8;--muted:#b6bcaf;--line:rgba(225,232,216,.36)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--light);background:var(--green-black);font-family:'Cormorant Garamond','EB Garamond',Georgia,serif;-webkit-font-smoothing:antialiased}a{color:inherit}button{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #cbd6c3;outline-offset:5px}
@@ -65,16 +69,22 @@
 @media(max-width:700px){.hero{min-height:970px}.site-nav__links{display:none}.site-nav__brand{font-size:16px}.hero__main{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;padding:155px 24px 110px;gap:43px}.hero__copy{padding:0}.hero__stroke{margin-bottom:22px}.hero__name{font-size:clamp(33px,8vw,48px)}.hero__practice{font-size:clamp(24px,6vw,38px);white-space:normal!important;letter-spacing:-.03em}.hero__place{font-size:clamp(22px,5.3vw,32px)}.hero__below{margin-top:29px}.hero__promise,.hero__urgency{font-size:28px}.hero__actions{margin-top:23px}.button-call{min-width:204px}.hero__carousel{margin:0 auto 0 16%;width:min(270px,68vw);height:339px;align-self:flex-start}.partner-peek{left:88%;width:38%;height:82%}.hero__footer{left:24px;right:24px;bottom:20px;font-size:8px}.hero__footer span:nth-child(2){display:none}.section{padding:78px 28px}.section--intro{grid-template-columns:1fr;gap:24px}.people-layout{gap:15px}.people-layout img{height:250px}.people-layout h3{font-size:25px}}
 @media(max-width:380px){.hero__name{font-size:31px}.hero__practice{font-size:23px}.hero__place{font-size:21px}.hero__carousel{height:305px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+@media(max-width:700px){.hero__h1 span{white-space:normal}.hero__name{font-size:clamp(28px,7.4vw,42px);letter-spacing:.01em}.hero__practice{font-size:clamp(21px,5.8vw,34px);letter-spacing:-.01em}}
+
+
+.practice-list{margin-top:44px;border-top:1px solid rgba(233,238,222,.2)}
+.practice-item{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(20px,4vw,70px);padding:30px 0;border-bottom:1px solid rgba(233,238,222,.2)}
+.practice-item h3{font-weight:400;font-size:clamp(24px,2.6vw,37px);line-height:1.12;margin:0}
+.practice-item small{display:block;font:400 11px 'Inter',sans-serif;letter-spacing:.20em;opacity:.6;text-transform:uppercase;margin-top:10px}
+.practice-item p{margin:0;font-size:clamp(17px,1.5vw,20px);line-height:1.6;color:#cbd2c3}
+.people-layout a{text-decoration:none;color:inherit;flex:1;display:block}
+@media(max-width:700px){.practice-item{grid-template-columns:1fr;gap:12px}}
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<main id="main">
-<section class="hero" id="home" aria-label="Forbes Stranger LLP homepage">
-  <div class="hero__photo" aria-hidden="true"></div><div class="hero__colorwash" aria-hidden="true"></div>
-  <div class="hero__mullions" aria-hidden="true"><span></span><span></span></div><div class="hero__edge" aria-hidden="true"></div>
-  <header class="site-header">
+<header class="site-header">
   <a class="brand" href="./" aria-label="Forbes Stranger LLP — home">
     <span class="brand__name">Forbes Stranger LLP</span>
     <span class="brand__tag">Private Criminal Defense</span>
@@ -82,12 +92,12 @@
   <nav class="nav" aria-label="Main navigation">
     <ul class="nav__links">
       <li><a href="./" aria-current="page">Home</a></li>
-      <li><a href="./team/">Team</a></li>
-      <li><a href="./practice-areas/">Practice Areas</a></li>
-      <li><a href="./case-results/">Case Results</a></li>
-      <li><a href="./contact/">Contact</a></li>
-      <li><a href="./about/">About</a></li>
-      <li><a href="./articles/">Articles</a></li>
+      <li><a href="team/">Team</a></li>
+      <li><a href="practice-areas/">Practice Areas</a></li>
+      <li><a href="case-results/">Case Results</a></li>
+      <li><a href="contact/">Contact</a></li>
+      <li><a href="about/">About</a></li>
+      <li><a href="articles/">Articles</a></li>
     </ul>
   </nav>
   <div class="nav__end">
@@ -105,38 +115,45 @@
 <div class="mnav" id="mobile-nav" aria-hidden="true">
   <ul class="mnav__links">
     <li><a href="./" aria-current="page">Home</a></li>
-    <li><a href="./team/">Team</a></li>
-    <li><a href="./practice-areas/">Practice Areas</a></li>
-    <li><a href="./case-results/">Case Results</a></li>
-    <li><a href="./contact/">Contact</a></li>
-    <li><a href="./about/">About</a></li>
-    <li><a href="./articles/">Articles</a></li>
+    <li><a href="team/">Team</a></li>
+    <li><a href="practice-areas/">Practice Areas</a></li>
+    <li><a href="case-results/">Case Results</a></li>
+    <li><a href="contact/">Contact</a></li>
+    <li><a href="about/">About</a></li>
+    <li><a href="articles/">Articles</a></li>
   </ul>
   <div class="mnav__foot">
     <a class="mnav-phone" href="tel:+12125550100"><span>Call 212.555.0100</span><span aria-hidden="true">→</span></a>
-    <p>40 Wall Street, Floor 28<br>New York, NY 10005</p>
+    <p>11 Broadway, #615<br>New York, NY</p>
   </div>
 </div>
+<main id="main">
+<section class="hero" id="home" aria-label="Forbes Stranger LLP homepage">
+  <div class="hero__photo" aria-hidden="true"></div><div class="hero__colorwash" aria-hidden="true"></div>
+  <div class="hero__mullions" aria-hidden="true"><span></span><span></span></div><div class="hero__edge" aria-hidden="true"></div>
   <div class="hero__main">
     <div class="hero__copy"><div class="hero__stroke" aria-hidden="true"></div>
       <h1 class="hero__h1"><span class="hero__name">Forbes Stranger LLP</span><span class="hero__practice">Private Criminal Defense</span><span class="hero__place">24/7 New York City</span></h1>
       <div class="hero__below"><p class="hero__promise">We are where you need us.</p><p class="hero__urgency">Arrested? Call now.</p></div>
-      <div class="hero__actions"><button class="button-call" type="button" id="callButton" aria-label="Call Forbes Stranger LLP"><span>Call now</span><span class="arrow" aria-hidden="true">→</span></button></div>
+      <div class="hero__actions"><a class="button-call" href="tel:+12125550100"><span>Call now</span><span class="arrow" aria-hidden="true">→</span></a></div>
     </div>
-    <div class="hero__carousel" id="partnerCarousel" aria-label="Founding partners" aria-roledescription="carousel">
-      <div class="partner-peek" aria-hidden="true"><img id="nextPortrait" src="assets/img/stranger-full.webp" alt=""></div>
-      <div class="partner-card" aria-live="polite"><img class="partner-card__image" id="activePortrait" src="assets/img/forbes-full.webp" alt="Illustrative concept portrait representing founding partner Ryan Forbes"><div class="partner-card__veil"></div><div class="partner-card__label"><span class="partner-card__name" id="partnerName">Ryan Forbes</span><span class="partner-card__role">Founding partner</span></div></div>
-      <div class="carousel-controls" role="group" aria-label="Choose partner"><button class="nav-arr" id="partnerPrev" type="button" aria-label="Previous partner">‹</button><button class="dot" id="slide0" type="button" aria-label="Show Ryan Forbes" aria-current="true"></button><button class="dot" id="slide1" type="button" aria-label="Show Helena Stranger" aria-current="false"></button><button class="nav-arr" id="partnerNext" type="button" aria-label="Next partner">›</button></div>
+    <div class="hero__carousel" id="partnerCarousel" aria-label="Attorneys" aria-roledescription="carousel">
+      <div class="partner-peek" aria-hidden="true"><img id="nextPortrait" src="assets/img/helena-stranger.jpg" alt=""></div>
+      <div class="partner-card" aria-live="polite"><img class="partner-card__image" id="activePortrait" src="assets/img/ryan-forbes.jpg" alt="Ryan Forbes"><div class="partner-card__veil"></div><div class="partner-card__label"><span class="partner-card__name" id="partnerName">Ryan Forbes</span><span class="partner-card__role">Attorney at Law</span></div></div>
+      <div class="carousel-controls" role="group" aria-label="Choose attorney"><button class="nav-arr" id="partnerPrev" type="button" aria-label="Previous attorney">‹</button><button class="dot" id="slide0" type="button" aria-label="Show Ryan Forbes" aria-current="true"></button><button class="dot" id="slide1" type="button" aria-label="Show Helena Stranger" aria-current="false"></button><button class="nav-arr" id="partnerNext" type="button" aria-label="Next attorney">›</button></div>
     </div>
   </div>
   <div class="hero__footer"><span>New York City</span><span>Private criminal defense</span><span>Available 24 / 7</span></div>
 </section>
-<section class="section section--intro" id="approach"><div class="small-label">The firm / 01</div><p>Forbes Stranger LLP is a Manhattan-based law firm dedicated to private criminal defense throughout New York City and beyond. Our trial lawyers defend individuals and businesses in serious state and federal criminal cases, including violent felonies, firearms offenses, sex crimes, financial crimes, and government investigations. We fight to protect your rights and defend your innocence, providing direct, personal representation with the highest level of discretion. When your freedom, reputation, and future are at stake, Forbes Stranger is the firm you want in your corner. <em>We are where you need us.</em></p></section>
-<section class="section section--dark" id="practice"><div class="small-label">What we do / 02</div><h2 class="section__headline">Counsel at every stage.</h2><div class="practice-row"><span>New York Criminal Defense</span><small>State courts</small></div><div class="practice-row"><span>Federal Criminal Defense</span><small>Federal courts</small></div><div class="practice-row"><span>White-Collar Investigations</span><small>Investigations</small></div><div class="practice-row"><span>Trial &amp; Appellate Advocacy</span><small>Litigation</small></div></section>
-
-<section class="sec sec--paper-dim" id="manifesto"><div class="manifesto"><div class="manifesto__rule" aria-hidden="true"></div><h2 class="manifesto__title">A Firm Behind Your Defense</h2><div class="manifesto__body"><p>Prosecutors and investigators work together to build their case against you. Your attorneys should work together to defend you. At Forbes Stranger LLP, your attorney never works alone. Our attorneys collaborate to investigate allegations, challenge evidence, develop strategy, and prepare for trial. From violent felonies and federal prosecutions to complex financial investigations, every client receives direct, personal representation backed by the combined knowledge, preparation, and resources of an entire law firm.</p></div></div></section>
-<section class="section section--people" id="attorneys"><div class="small-label">The founding partners / 03</div><h2 class="section__headline">The attorneys behind the firm.</h2><div class="people-layout"><article><img src="assets/img/forbes-full.webp" alt="Illustrative concept portrait for Ryan Forbes"><h3>Ryan Forbes</h3><p>Founding partner</p></article><article><img src="assets/img/stranger-full.webp" alt="Illustrative concept portrait for Helena Stranger"><h3>Helena Stranger</h3><p>Founding partner</p></article></div></section>
-<section class="section section--contact" id="contact"><div class="small-label">Contact / 04</div><h2 class="section__headline">ARRESTED? UNDER INVESTIGATION? CALL NOW.</h2><p class="contact-copy">An arrest, criminal investigation, or contact from law enforcement can happen without warning. What you do next matters. Contact Forbes Stranger immediately for private criminal defense backed by the resources of a full law firm, available 24 hours a day, seven days a week.</p><button class="button-call" id="contactCallButton" type="button">Call now <span class="arrow" aria-hidden="true">→</span></button><p class="preview-note">Design concept. Authentic partner photography and the firm’s confirmed contact details must be added before publication.</p></section>
+<section class="section section--intro" id="firm"><div class="small-label">The firm / 01</div><p>Forbes Stranger LLP is a Manhattan-based law firm dedicated to private criminal defense throughout New York City and beyond. Our trial lawyers defend individuals and businesses in serious state and federal criminal cases, including violent felonies, firearms offenses, sex crimes, financial crimes, and government investigations. We fight to protect your rights and defend your innocence, providing direct, personal representation with the highest level of discretion. When your freedom, reputation, and future are at stake, Forbes Stranger is the firm you want in your corner. We are where you need us.</p></section>
+<section class="section section--dark" id="practice"><div class="small-label">What we do / 02</div><h2 class="section__headline">WHAT WE DO</h2><div class="practice-list">
+  <div class="practice-item"><div><h3>New York Criminal Defense</h3><small>State Courts</small></div><p>Defense of misdemeanor and felony charges in Manhattan, Brooklyn, Queens, the Bronx, Staten Island, and courts across New York State. We handle gun, drug, assault, sex crime, domestic violence, theft, and DWI cases from arrest and arraignment through resolution or trial.</p></div>
+  <div class="practice-item"><div><h3>Federal Criminal Defense</h3><small>Federal Courts</small></div><p>Defense of federal investigations and prosecutions in the Southern and Eastern Districts of New York, including fraud, drug conspiracy, gun, RICO, and cybercrime charges. We represent clients from the first agent contact or target letter through indictment, trial, and sentencing.</p></div>
+  <div class="practice-item"><div><h3>White-Collar Investigations</h3><small>Investigations</small></div><p>Representation of executives, professionals, and companies facing subpoenas, search warrants, and investigations by the DOJ, SEC, Manhattan DA, and New York Attorney General. We defend fraud, embezzlement, money laundering, tax, and corruption matters and work to resolve investigations before charges are filed.</p></div>
+  <div class="practice-item"><div><h3>Trial &amp; Appellate Advocacy</h3><small>Litigation</small></div><p>Trial lawyers for state and federal jury trials, suppression hearings, and retrials, including cases taken over from public defenders and assigned counsel. We also handle criminal appeals, motions to vacate convictions, and sentencing challenges in New York’s appellate courts and the Second Circuit.</p></div>
+</div></section>
+<section class="section section--people" id="team"><div class="small-label">Our team / 03</div><h2 class="section__headline">OUR TEAM</h2><div class="people-layout"><a href="team/ryan-forbes/"><article><img src="assets/img/ryan-forbes.jpg" alt="Ryan Forbes"><h3>Ryan Forbes</h3><p>ATTORNEY AT LAW</p></article></a><a href="team/helena-stranger/"><article><img src="assets/img/helena-stranger.jpg" alt="Helena Stranger"><h3>Helena Stranger</h3><p>ATTORNEY AT LAW</p></article></a></div></section>
+<section class="section section--contact" id="contact"><div class="small-label">Contact / 04</div><h2 class="section__headline">ARRESTED? UNDER INVESTIGATION? CALL NOW.</h2><p class="contact-copy">An arrest, criminal investigation, or contact from law enforcement can happen without warning. What you do next matters. Contact Forbes Stranger immediately for private criminal defense backed by the resources of a full law firm, available 24 hours a day, seven days a week.</p><a class="contact-btn" href="tel:+12125550100">CALL US NOW</a></section>
 </main>
 
 <footer class="site-footer">
@@ -155,36 +172,36 @@
     <div>
       <h2>The Firm</h2>
       <ul>
-        <li><a href="./about/">About</a></li>
-        <li><a href="./team/">Our Team</a></li>
-        <li><a href="./case-results/">Case Results</a></li>
-        <li><a href="./articles/">Articles</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="team/">Our Team</a></li>
+        <li><a href="case-results/">Case Results</a></li>
+        <li><a href="articles/">Articles</a></li>
       </ul>
     </div>
     <div>
       <h2>Practice</h2>
       <ul>
-        <li><a href="./practice-areas/federal-criminal-defense/">Federal Criminal Defense</a></li>
-        <li><a href="./practice-areas/white-collar-crime-government-investigations/">White Collar Crime & Government Investigations</a></li>
-        <li><a href="./practice-areas/criminal-investigations-grand-jury-pre-charge-defense/">Criminal Investigations & Pre-Charge Defense</a></li>
-        <li><a href="./practice-areas/gun-weapons-charges/">Gun & Weapons Charges</a></li>
-        <li><a href="./practice-areas/sex-crimes-sora/">Sex Crimes & SORA</a></li>
-        <li><a href="./practice-areas/domestic-violence-orders-of-protection/">Domestic Violence & Orders of Protection</a></li>
-        <li><a href="./practice-areas/assault-violent-crimes/">Assault & Violent Crimes</a></li>
-        <li><a href="./practice-areas/murder-manslaughter-attempted-murder/">Murder, Manslaughter & Attempted Murder</a></li>
-        <li><a href="./practice-areas/robbery-burglary-theft/">Robbery, Burglary & Theft Crimes</a></li>
-        <li><a href="./practice-areas/drug-crimes/">Drug Crimes</a></li>
-        <li><a href="./practice-areas/dwi-vehicular-crimes/">DWI & Vehicular Crimes</a></li>
-        <li><a href="./practice-areas/conspiracy-rico-enterprise-crime/">Conspiracy, RICO & Enterprise Crime</a></li>
-        <li><a href="./practice-areas/appeals-sentencing-post-conviction/">Sentencing & Post-Conviction Relief</a></li>
-        <li><a href="./practice-areas/victim-representation/">Victim Representation</a></li>
-        <li><a href="./practice-areas/trial-practice/">Trial</a></li>
+        <li><a href="practice-areas/federal-criminal-defense/">Federal Criminal Defense</a></li>
+        <li><a href="practice-areas/white-collar-crime-government-investigations/">White Collar Crime &amp; Government Investigations</a></li>
+        <li><a href="practice-areas/criminal-investigations-grand-jury-pre-charge-defense/">Criminal Investigations, Grand Juries &amp; Pre-Charge Defense</a></li>
+        <li><a href="practice-areas/gun-weapons-charges/">Gun &amp; Weapons Charges</a></li>
+        <li><a href="practice-areas/sex-crimes-sora/">Sex Crimes &amp; SORA</a></li>
+        <li><a href="practice-areas/domestic-violence-orders-of-protection/">Domestic Violence &amp; Orders of Protection</a></li>
+        <li><a href="practice-areas/assault-violent-crimes/">Assault &amp; Violent Crimes</a></li>
+        <li><a href="practice-areas/murder-manslaughter-attempted-murder/">Murder, Manslaughter &amp; Attempted Murder</a></li>
+        <li><a href="practice-areas/robbery-burglary-theft/">Robbery, Burglary &amp; Theft Crimes</a></li>
+        <li><a href="practice-areas/drug-crimes/">Drug Crimes</a></li>
+        <li><a href="practice-areas/dwi-vehicular-crimes/">DWI &amp; Vehicular Crimes</a></li>
+        <li><a href="practice-areas/conspiracy-rico-enterprise-crime/">Conspiracy, RICO &amp; Enterprise Crime</a></li>
+        <li><a href="practice-areas/appeals-sentencing-post-conviction/">Sentencing &amp; Post-Conviction Relief</a></li>
+        <li><a href="practice-areas/victim-representation/">Victim Representation</a></li>
+        <li><a href="practice-areas/trial-practice/">Trial</a></li>
       </ul>
     </div>
     <div>
       <h2>Contact</h2>
       <ul class="site-footer__address">
-        <li>40 Wall Street, Floor 28<br>New York, NY 10005</li>
+        <li>11 Broadway, #615<br>New York, NY</li>
         <li><a href="tel:+12125550100">212.555.0100</a></li>
         <li>Available 24/7</li>
       </ul>
@@ -197,22 +214,15 @@
   <p class="site-footer__legal">Prior results do not guarantee a similar outcome. The information on this site is for general purposes only and is not legal advice. Contacting the firm does not create an attorney–client relationship.</p>
 </footer>
 
-<div class="dialog-backdrop" id="contactDialog" hidden><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogHeading"><h2 id="dialogHeading">Forbes Stranger LLP</h2><p>Connect the firm's confirmed 24/7 telephone number to activate direct calling. This is a working design preview.</p><button type="button" id="closeDialog">Close</button></div></div>
+<script src="assets/site.js"></script>
 <script>
 (()=>{
-  const partners=[
-    {name:'Ryan Forbes',src:'assets/img/forbes-full.webp'},
-    {name:'Helena Stranger',src:'assets/img/stranger-full.webp'}
-  ];
+  const partners=[{name:'Ryan Forbes',src:'assets/img/ryan-forbes.jpg'},{name:'Helena Stranger',src:'assets/img/helena-stranger.jpg'}];
   const main=document.querySelector('#activePortrait');const next=document.querySelector('#nextPortrait');const name=document.querySelector('#partnerName');const wrap=document.querySelector('#partnerCarousel');const dots=[document.querySelector('#slide0'),document.querySelector('#slide1')];let active=0;let timer;
-  function setPartner(n){active=(n+partners.length)%partners.length;main.style.opacity='0.6';window.setTimeout(()=>{main.src=partners[active].src;main.alt='Illustrative concept portrait representing founding partner '+partners[active].name;name.textContent=partners[active].name;next.src=partners[(active+1)%2].src;main.style.opacity='1';dots.forEach((d,i)=>d.setAttribute('aria-current',i===active?'true':'false'))},150)}
+  function setPartner(n){active=(n+partners.length)%partners.length;main.style.opacity='0.6';window.setTimeout(()=>{main.src=partners[active].src;main.alt=partners[active].name;name.textContent=partners[active].name;next.src=partners[(active+1)%2].src;main.style.opacity='1';dots.forEach((d,i)=>d.setAttribute('aria-current',i===active?'true':'false'))},150)}
   function start(){if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;clearInterval(timer);timer=window.setInterval(()=>setPartner(active+1),6500)}
   document.querySelector('#partnerNext').onclick=()=>{setPartner(active+1);start()};document.querySelector('#partnerPrev').onclick=()=>{setPartner(active-1);start()};dots.forEach((d,i)=>d.onclick=()=>{setPartner(i);start()});wrap.addEventListener('mouseenter',()=>clearInterval(timer));wrap.addEventListener('mouseleave',start);wrap.addEventListener('focusin',()=>clearInterval(timer));wrap.addEventListener('focusout',start);start();
-  // Insert the firm's confirmed published number before deploying: example 12125551212 (digits only).
-  const FIRM_PHONE='12125550100';const dialog=document.querySelector('#contactDialog');const close=document.querySelector('#closeDialog');function contact(){if(FIRM_PHONE){window.location.href='tel:+'+FIRM_PHONE}else{dialog.hidden=false;close.focus()}};
-  document.querySelector('#callButton').onclick=contact;document.querySelector('#contactCallButton').onclick=contact;function shut(){dialog.hidden=true;document.querySelector('#callButton').focus()}close.onclick=shut;dialog.addEventListener('click',e=>{if(e.target===dialog)shut()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!dialog.hidden)shut()});
 })();
 </script>
-<script src="assets/site.js"></script>
 </body>
 </html>
